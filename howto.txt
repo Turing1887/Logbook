@@ -2,3 +2,7 @@ How to install npm modules:
 
 Just run npm install in your console after you've installed node.js. 
 It will install all the npm modules mentioned in the package.json automatically.
+
+How to run:
+
+Type in "npm start" in your console.
