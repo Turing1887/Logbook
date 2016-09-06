@@ -5,4 +5,4 @@ It will install all the npm modules mentioned in the package.json automatically.
 
 How to run:
 
-Type in "npm start" in your console.
+Open your console and go into the folder Logbook is in(cd/"foldername").Type in "npm start" in your console.
