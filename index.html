@@ -23,14 +23,17 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <section class="main">
-					<h2 class="open-logname"></h2>
+					<div><h2 class="open-logname"></h2></div>
         	<textarea readonly class="show-log"></textarea>
 					<form method="post" action="" id="log-form">
           	<input type="text" class="write-log" id="log-msg"></input>
 					</form>
           <button onclick="window.close()" class="exit-btn">X</button>
           <button class="add-btn">+</button>
-          <button class="choose-log">File</button>
+          <form method="post" action="" id="log-choose">
+            <input type="file" class="input-log" id="log-input">
+            <label for="log-input" class="choose-log">Open</label>
+          </form>
         </section>
 
         <section class="file-screen hidden">
@@ -41,6 +44,6 @@
 						<input type="text" id="filename" class="name-input">
 					</form>
         </section>
-        
+
     </body>
 </html>

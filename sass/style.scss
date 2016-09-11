@@ -6,6 +6,7 @@ body{
     background-color: $background-color;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
+
 }
 p,h2{
     color: $white-alt;
@@ -18,7 +19,7 @@ button{
 button:hover{
     background-color: $hov-col;
     color: $primary-color;
-    transition: background-color 0.5s;  
+    transition: background-color 0.5s;
     transition: color 0.5s;
 }
 textarea{
@@ -31,30 +32,30 @@ textarea{
 }
 .open-logname{
     position: absolute;
-    left: 200px;
-    top: 0;
+    left: 350px;
+    top: 5px;
 }
 .exit-btn{
     display: block;
-    margin-right: 100px;
+    margin-right: 60px;
     position: absolute;
-    right: 50px;
-    top: 50px;
-    padding: 10px 15px;
+    font-size: 18px;
+    right: -28px;
+    top: 2px;
+    padding: 10px 17px;
     cursor: pointer;
 }
 /*.exit-btn:hover{
     background-color: $primary-color;
-    transition: background-color 0.3s;  
+    transition: background-color 0.3s;
 }*/
 .add-btn{
     display: block;
     font-size: 18px;
-   
-    margin-left: 100px;
+    margin-left: 60px;
     position: absolute;
-    left: 50px;
-    top: 50px;
+    left: -28px;
+    top: 2px;
     // background-color: $white-alt;
     padding: 10px 15px;
     cursor: pointer;
@@ -66,7 +67,7 @@ textarea{
 .back-btn{
     display: block;
     font-size: 18px;
-    
+
     position: absolute;
     left: 10px;
     top: 10px;
@@ -81,33 +82,44 @@ textarea{
 }*/
 .choose-log{
     display: block;
-    font-size: 12px;
-    
-    margin-left: 100px;
+    font-size: 18px;
+    margin-left: 60px;
     position: absolute;
     left: 50px;
-    top: 100px;
+    top: 2px;
     // background-color: $white-alt;
-    padding: 10px 11px;
+    padding: 10px 10px;
     cursor: pointer;
+    background-color: $background-color;
+    border: 1px solid $hov-col;
+    color: $hov-col;
 }
-/*.choose-log:hover{
-    background-color: $primary-color;
-    transition: background-color 0.3s;
-}*/
+.choose-log:hover{
+  background-color: $hov-col;
+  color: $primary-color;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+.input-log{
+  position: absolute;
+  left: -5000px;
+}
 .show-log{
     height: 300px;
-    width: 400px;
+    width: 740px;
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .write-log{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
-    width: 400px;
-    padding-top: 20px;
-    font-size: 20px;
+    width: 740px;
+    height: 40px;
+    // padding-top: 20px;
+    font-size: 15px;
     overflow: auto;
     display: block;
-    text-align: center;
+    //text-align: center;
     background-color: $white-alt;
     border: 1px solid black;
     margin: 10px auto;
@@ -119,13 +131,15 @@ textarea{
 .main{
     margin-top: 50px;
 }
-
+.main>div{
+  margin: auto;
+  text-align: center;
+}
 .headline{
     position: absolute;
     left: 200px;
     top: 100px;
     font-weight: bold;
-
 }
 .name-input{
     width: 400px;

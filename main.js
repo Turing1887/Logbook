@@ -18,10 +18,8 @@ app.on('ready', function() {
     win = new BrowserWindow({
         height: 600,
         width: 800,
-        frame: false
+        frame: false,
+        resizable: false
     });
     win.loadURL('file://' + __dirname + '/index.html');
 });
-
-
-
